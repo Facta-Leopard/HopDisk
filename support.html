@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HopDisk Support</title>
-  <meta name="description" content="Support information for HopDisk, a macOS storage repair utility.">
+  <meta name="description" content="Support information for HopDisk in all supported languages.">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -20,60 +20,287 @@
     </nav>
   </header>
 
-  <main class="document">
+  <main class="document localized-doc">
     <p class="eyebrow">Support</p>
     <h1>HopDisk Support</h1>
     <p class="lead">
-      HopDisk is designed to help you inspect storage mismatches and move only explicitly selected cleanup candidates to Trash.
-      This page covers common support questions and how to report a problem.
+      Support information is provided below in every language currently supported by HopDisk.
+      Each section covers help requests, cleanup safety, System Data behavior, folder access, and privacy.
     </p>
 
-    <section>
-      <h2>Get help</h2>
+    <nav class="language-menu" aria-label="Supported languages">
+      <a href="#support-en">English</a>
+      <a href="#support-ko">한국어</a>
+      <a href="#support-fr">Français</a>
+      <a href="#support-es">Español</a>
+      <a href="#support-de">Deutsch</a>
+      <a href="#support-ja">日本語</a>
+      <a href="#support-zh-Hans">简体中文</a>
+      <a href="#support-zh-Hant">繁體中文</a>
+    </nav>
+
+    <section id="support-en" class="language-block" lang="en">
+      <p class="language-label">English (en)</p>
+      <h2>Support</h2>
+      <h3>Get help</h3>
       <p>
         For bug reports, questions, and support requests, use the public GitHub issue tracker:
         <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        Include your macOS version, HopDisk version, scan type, and what you expected to happen.
       </p>
       <p>
-        When reporting an issue, include your macOS version, HopDisk version, scan type, and what you expected to happen.
-        Do not post private file paths, file names, screenshots, or logs unless you are comfortable sharing them publicly.
+        GitHub Issues are public. Do not post private file paths, file names, screenshots, or logs unless you intentionally want to share them publicly.
       </p>
-    </section>
-
-    <section>
-      <h2>Cleanup safety</h2>
+      <h3>Cleanup safety</h3>
       <ul>
         <li>HopDisk moves selected cleanup items to Trash only.</li>
         <li>HopDisk does not empty Trash automatically.</li>
         <li>HopDisk does not use root privileges, privileged helpers, or background daemons.</li>
-        <li>System-managed metadata, recent active files, virtual machines, and app data require review or are blocked.</li>
+        <li>System-managed metadata, active files, virtual machines, and app data require review or are blocked.</li>
       </ul>
+      <h3>System Data still looks large</h3>
+      <p>
+        macOS may count APFS snapshots, purgeable space, Spotlight indexes, package metadata, caches, and app support data as System Data.
+        Some of those items are managed by macOS and are not safe cleanup targets. HopDisk separates safe candidates from items that require review.
+      </p>
+      <h3>Folder access</h3>
+      <p>
+        HopDisk scans only locations you select in the macOS file picker or saved locations you explicitly choose to remember.
+        If items are inaccessible, reauthorize the saved location or select the relevant folder or volume again.
+      </p>
+      <h3>Privacy</h3>
+      <p>HopDisk runs locally on your Mac and does not upload scan results. Read the <a href="privacy.html">Privacy Policy</a>.</p>
     </section>
 
-    <section>
-      <h2>System Data still looks large</h2>
+    <section id="support-ko" class="language-block" lang="ko">
+      <p class="language-label">한국어 (ko)</p>
+      <h2>지원</h2>
+      <h3>도움 받기</h3>
       <p>
-        macOS may count APFS snapshots, purgeable space, Spotlight indexes, package metadata, caches, and app support data under
-        System Data. Some of those items are not safe cleanup targets. HopDisk separates safe candidates from protected or
-        macOS-managed data so you can choose the right next step.
+        버그 신고, 질문, 지원 요청은 공개 GitHub 이슈에서 남겨 주세요:
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        macOS 버전, HopDisk 버전, 실행한 스캔 종류, 기대한 동작과 실제 결과를 함께 적어 주시면 확인이 빠릅니다.
       </p>
+      <p>
+        GitHub 이슈는 공개됩니다. 공개해도 되는 경우가 아니라면 개인 파일 경로, 파일명, 스크린샷, 로그를 올리지 마세요.
+      </p>
+      <h3>정리 안전성</h3>
+      <ul>
+        <li>HopDisk는 선택한 정리 항목을 휴지통으로만 이동합니다.</li>
+        <li>HopDisk는 휴지통을 자동으로 비우지 않습니다.</li>
+        <li>HopDisk는 루트 권한, 권한 상승 헬퍼, 백그라운드 데몬을 사용하지 않습니다.</li>
+        <li>시스템 관리 메타데이터, 최근 사용 파일, 가상 머신, 앱 데이터는 검토가 필요하거나 정리 대상에서 차단됩니다.</li>
+      </ul>
+      <h3>시스템 데이터가 여전히 크게 보이는 경우</h3>
+      <p>
+        macOS는 APFS 스냅샷, 제거 가능 공간, Spotlight 인덱스, 패키지 메타데이터, 캐시, 앱 지원 데이터를 시스템 데이터로 계산할 수 있습니다.
+        이 중 일부는 macOS가 관리하는 항목이라 임의 삭제 대상이 아닙니다. HopDisk는 안전한 후보와 검토가 필요한 항목을 분리해서 보여줍니다.
+      </p>
+      <h3>폴더 접근</h3>
+      <p>
+        HopDisk는 macOS 파일 선택기에서 사용자가 직접 선택한 위치 또는 사용자가 저장하기로 한 위치만 스캔합니다.
+        접근할 수 없는 항목이 보이면 저장된 위치를 다시 승인하거나 해당 폴더 또는 볼륨을 다시 선택해 주세요.
+      </p>
+      <h3>개인정보</h3>
+      <p>HopDisk는 사용자의 Mac에서 로컬로 실행되며 스캔 결과를 업로드하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>을 확인해 주세요.</p>
     </section>
 
-    <section>
-      <h2>Folder access</h2>
+    <section id="support-fr" class="language-block" lang="fr">
+      <p class="language-label">Français (fr)</p>
+      <h2>Assistance</h2>
+      <h3>Obtenir de l'aide</h3>
       <p>
-        HopDisk can scan only locations you select in the macOS file picker or saved locations you explicitly remember.
-        If a scan reports inaccessible items, choose a narrower folder, reauthorize the saved location, or run a broader scan
-        by selecting the relevant volume yourself.
+        Pour signaler un problème, poser une question ou demander de l'aide, utilisez le suivi public des issues GitHub :
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        Indiquez votre version de macOS, la version de HopDisk, le type d'analyse lancé et le résultat attendu.
       </p>
+      <p>
+        Les issues GitHub sont publiques. Ne publiez pas de chemins de fichiers privés, noms de fichiers, captures d'écran ou journaux si vous ne souhaitez pas les rendre publics.
+      </p>
+      <h3>Sécurité du nettoyage</h3>
+      <ul>
+        <li>HopDisk déplace uniquement les éléments sélectionnés vers la corbeille.</li>
+        <li>HopDisk ne vide pas automatiquement la corbeille.</li>
+        <li>HopDisk n'utilise pas les privilèges root, d'assistant privilégié ni de démon en arrière-plan.</li>
+        <li>Les métadonnées gérées par le système, fichiers actifs, machines virtuelles et données d'apps exigent une vérification ou sont bloqués.</li>
+      </ul>
+      <h3>Les données système semblent encore volumineuses</h3>
+      <p>
+        macOS peut compter les instantanés APFS, l'espace purgeable, les index Spotlight, les métadonnées de paquets, les caches et les données de support d'apps comme données système.
+        Certains éléments sont gérés par macOS et ne sont pas des cibles de nettoyage sûres. HopDisk distingue les candidats sûrs des éléments à vérifier.
+      </p>
+      <h3>Accès aux dossiers</h3>
+      <p>
+        HopDisk analyse uniquement les emplacements que vous choisissez dans le sélecteur de fichiers macOS ou les emplacements enregistrés explicitement.
+        Si des éléments sont inaccessibles, autorisez de nouveau l'emplacement enregistré ou choisissez à nouveau le dossier ou le volume concerné.
+      </p>
+      <h3>Confidentialité</h3>
+      <p>HopDisk fonctionne localement sur votre Mac et n'envoie pas les résultats d'analyse. Consultez la <a href="privacy.html">politique de confidentialité</a>.</p>
     </section>
 
-    <section>
-      <h2>Privacy</h2>
+    <section id="support-es" class="language-block" lang="es">
+      <p class="language-label">Español (es)</p>
+      <h2>Soporte</h2>
+      <h3>Obtener ayuda</h3>
       <p>
-        HopDisk runs locally on your Mac and does not upload scan results. Read the full
-        <a href="privacy.html">Privacy Policy</a>.
+        Para informar errores, hacer preguntas o solicitar soporte, usa el rastreador público de incidencias de GitHub:
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        Incluye tu versión de macOS, la versión de HopDisk, el tipo de análisis y qué esperabas que ocurriera.
       </p>
+      <p>
+        Las incidencias de GitHub son públicas. No publiques rutas privadas, nombres de archivos, capturas de pantalla ni registros salvo que quieras compartirlos públicamente.
+      </p>
+      <h3>Seguridad de limpieza</h3>
+      <ul>
+        <li>HopDisk solo mueve los elementos seleccionados a la papelera.</li>
+        <li>HopDisk no vacía la papelera automáticamente.</li>
+        <li>HopDisk no usa privilegios root, asistentes privilegiados ni demonios en segundo plano.</li>
+        <li>Los metadatos gestionados por el sistema, archivos activos, máquinas virtuales y datos de apps requieren revisión o se bloquean.</li>
+      </ul>
+      <h3>Datos del sistema sigue pareciendo grande</h3>
+      <p>
+        macOS puede contar instantáneas APFS, espacio purgable, índices de Spotlight, metadatos de paquetes, cachés y datos de soporte de apps como Datos del sistema.
+        Algunos elementos son gestionados por macOS y no son objetivos seguros de limpieza. HopDisk separa candidatos seguros de elementos que requieren revisión.
+      </p>
+      <h3>Acceso a carpetas</h3>
+      <p>
+        HopDisk analiza solo las ubicaciones que eliges en el selector de archivos de macOS o las ubicaciones guardadas que decides recordar.
+        Si hay elementos inaccesibles, vuelve a autorizar la ubicación guardada o selecciona de nuevo la carpeta o el volumen correspondiente.
+      </p>
+      <h3>Privacidad</h3>
+      <p>HopDisk se ejecuta localmente en tu Mac y no sube resultados de análisis. Lee la <a href="privacy.html">política de privacidad</a>.</p>
+    </section>
+
+    <section id="support-de" class="language-block" lang="de">
+      <p class="language-label">Deutsch (de)</p>
+      <h2>Support</h2>
+      <h3>Hilfe erhalten</h3>
+      <p>
+        Für Fehlerberichte, Fragen und Supportanfragen nutze bitte den öffentlichen GitHub-Issue-Tracker:
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        Gib macOS-Version, HopDisk-Version, Scan-Typ und das erwartete Verhalten an.
+      </p>
+      <p>
+        GitHub Issues sind öffentlich. Veröffentliche keine privaten Dateipfade, Dateinamen, Screenshots oder Protokolle, wenn du sie nicht bewusst öffentlich teilen möchtest.
+      </p>
+      <h3>Sicherheit bei der Bereinigung</h3>
+      <ul>
+        <li>HopDisk bewegt ausgewählte Bereinigungselemente nur in den Papierkorb.</li>
+        <li>HopDisk leert den Papierkorb nicht automatisch.</li>
+        <li>HopDisk nutzt keine Root-Rechte, privilegierten Hilfsprogramme oder Hintergrund-Daemons.</li>
+        <li>Systemverwaltete Metadaten, aktive Dateien, virtuelle Maschinen und App-Daten müssen geprüft werden oder werden blockiert.</li>
+      </ul>
+      <h3>Systemdaten wirken weiterhin groß</h3>
+      <p>
+        macOS kann APFS-Snapshots, löschbaren Speicher, Spotlight-Indizes, Paketmetadaten, Caches und App-Support-Daten als Systemdaten zählen.
+        Einige dieser Elemente werden von macOS verwaltet und sind keine sicheren Bereinigungsziele. HopDisk trennt sichere Kandidaten von prüfpflichtigen Elementen.
+      </p>
+      <h3>Ordnerzugriff</h3>
+      <p>
+        HopDisk scannt nur Orte, die du im macOS-Dateidialog auswählst, oder gespeicherte Orte, die du ausdrücklich merken lässt.
+        Wenn Elemente nicht zugänglich sind, autorisiere den gespeicherten Ort erneut oder wähle den betreffenden Ordner oder Datenträger erneut aus.
+      </p>
+      <h3>Datenschutz</h3>
+      <p>HopDisk läuft lokal auf deinem Mac und lädt keine Scanergebnisse hoch. Lies die <a href="privacy.html">Datenschutzerklärung</a>.</p>
+    </section>
+
+    <section id="support-ja" class="language-block" lang="ja">
+      <p class="language-label">日本語 (ja)</p>
+      <h2>サポート</h2>
+      <h3>ヘルプを受ける</h3>
+      <p>
+        不具合の報告、質問、サポート依頼は公開 GitHub Issues を使用してください:
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+        macOS のバージョン、HopDisk のバージョン、実行したスキャンの種類、期待した動作を記載してください。
+      </p>
+      <p>
+        GitHub Issues は公開されます。公開してよい場合を除き、個人のファイルパス、ファイル名、スクリーンショット、ログを投稿しないでください。
+      </p>
+      <h3>クリーンアップの安全性</h3>
+      <ul>
+        <li>HopDisk は選択したクリーンアップ項目をゴミ箱へ移動するだけです。</li>
+        <li>HopDisk はゴミ箱を自動的に空にしません。</li>
+        <li>HopDisk は root 権限、特権ヘルパー、バックグラウンドデーモンを使用しません。</li>
+        <li>システム管理メタデータ、使用中のファイル、仮想マシン、アプリデータは確認が必要、または対象外として扱われます。</li>
+      </ul>
+      <h3>システムデータがまだ大きく見える場合</h3>
+      <p>
+        macOS は APFS スナップショット、パージ可能領域、Spotlight インデックス、パッケージメタデータ、キャッシュ、アプリサポートデータをシステムデータとして数えることがあります。
+        その一部は macOS が管理しており、安全な削除対象ではありません。HopDisk は安全な候補と確認が必要な項目を分けて表示します。
+      </p>
+      <h3>フォルダアクセス</h3>
+      <p>
+        HopDisk は macOS のファイル選択画面で選んだ場所、または明示的に保存した場所だけをスキャンします。
+        アクセスできない項目がある場合は、保存済みの場所を再承認するか、対象のフォルダまたはボリュームをもう一度選択してください。
+      </p>
+      <h3>プライバシー</h3>
+      <p>HopDisk は Mac 上でローカルに動作し、スキャン結果をアップロードしません。詳しくは <a href="privacy.html">プライバシーポリシー</a> をご確認ください。</p>
+    </section>
+
+    <section id="support-zh-Hans" class="language-block" lang="zh-Hans">
+      <p class="language-label">简体中文 (zh-Hans)</p>
+      <h2>支持</h2>
+      <h3>获取帮助</h3>
+      <p>
+        如需报告问题、提出疑问或请求支持，请使用公开的 GitHub Issues：
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>。
+        请附上 macOS 版本、HopDisk 版本、扫描类型，以及你预期发生的结果。
+      </p>
+      <p>
+        GitHub Issues 是公开的。除非你明确希望公开分享，否则不要发布私人文件路径、文件名、截图或日志。
+      </p>
+      <h3>清理安全性</h3>
+      <ul>
+        <li>HopDisk 只会将选中的清理项目移到废纸篓。</li>
+        <li>HopDisk 不会自动清空废纸篓。</li>
+        <li>HopDisk 不使用 root 权限、特权辅助工具或后台守护进程。</li>
+        <li>系统管理的元数据、正在使用的文件、虚拟机和 App 数据需要审查或会被阻止清理。</li>
+      </ul>
+      <h3>系统数据仍然看起来很大</h3>
+      <p>
+        macOS 可能会将 APFS 快照、可清除空间、Spotlight 索引、包元数据、缓存和 App 支持数据计入系统数据。
+        其中一些项目由 macOS 管理，并不适合作为安全清理目标。HopDisk 会把安全候选项和需要审查的项目分开显示。
+      </p>
+      <h3>文件夹访问</h3>
+      <p>
+        HopDisk 只扫描你在 macOS 文件选择器中选择的位置，或你明确保存的位置。
+        如果某些项目无法访问，请重新授权已保存的位置，或重新选择相关文件夹或卷宗。
+      </p>
+      <h3>隐私</h3>
+      <p>HopDisk 在你的 Mac 本机运行，不会上传扫描结果。请阅读<a href="privacy.html">隐私政策</a>。</p>
+    </section>
+
+    <section id="support-zh-Hant" class="language-block" lang="zh-Hant">
+      <p class="language-label">繁體中文 (zh-Hant)</p>
+      <h2>支援</h2>
+      <h3>取得協助</h3>
+      <p>
+        如需回報問題、提出疑問或請求支援，請使用公開的 GitHub Issues：
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>。
+        請附上 macOS 版本、HopDisk 版本、掃描類型，以及你預期發生的結果。
+      </p>
+      <p>
+        GitHub Issues 是公開的。除非你明確希望公開分享，否則不要發布私人檔案路徑、檔名、截圖或記錄。
+      </p>
+      <h3>清理安全性</h3>
+      <ul>
+        <li>HopDisk 只會將選取的清理項目移到垃圾桶。</li>
+        <li>HopDisk 不會自動清空垃圾桶。</li>
+        <li>HopDisk 不使用 root 權限、特權輔助工具或背景常駐程式。</li>
+        <li>系統管理的中繼資料、使用中的檔案、虛擬機和 App 資料需要檢查或會被阻擋清理。</li>
+      </ul>
+      <h3>系統資料仍然看起來很大</h3>
+      <p>
+        macOS 可能會將 APFS 快照、可清除空間、Spotlight 索引、套件中繼資料、快取和 App 支援資料計入系統資料。
+        其中一些項目由 macOS 管理，並不適合作為安全清理目標。HopDisk 會將安全候選項目和需要檢查的項目分開顯示。
+      </p>
+      <h3>資料夾存取</h3>
+      <p>
+        HopDisk 只會掃描你在 macOS 檔案選擇器中選取的位置，或你明確儲存的位置。
+        如果某些項目無法存取，請重新授權已儲存的位置，或重新選取相關資料夾或卷宗。
+      </p>
+      <h3>隱私</h3>
+      <p>HopDisk 在你的 Mac 本機執行，不會上傳掃描結果。請閱讀<a href="privacy.html">隱私權政策</a>。</p>
     </section>
   </main>
 
