@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HopDisk Support</title>
+  <meta name="description" content="Support information for HopDisk, a macOS storage repair utility.">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HopDisk home">
+      <span class="brand-mark">HD</span>
+      <span>HopDisk</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a aria-current="page" href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/Facta-Leopard/HopDisk">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="document">
+    <p class="eyebrow">Support</p>
+    <h1>HopDisk Support</h1>
+    <p class="lead">
+      HopDisk is designed to help you inspect storage mismatches and move only explicitly selected cleanup candidates to Trash.
+      This page covers common support questions and how to report a problem.
+    </p>
+
+    <section>
+      <h2>Get help</h2>
+      <p>
+        For bug reports, questions, and support requests, use the public GitHub issue tracker:
+        <a href="https://github.com/Facta-Leopard/HopDisk/issues">github.com/Facta-Leopard/HopDisk/issues</a>.
+      </p>
+      <p>
+        When reporting an issue, include your macOS version, HopDisk version, scan type, and what you expected to happen.
+        Do not post private file paths, file names, screenshots, or logs unless you are comfortable sharing them publicly.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cleanup safety</h2>
+      <ul>
+        <li>HopDisk moves selected cleanup items to Trash only.</li>
+        <li>HopDisk does not empty Trash automatically.</li>
+        <li>HopDisk does not use root privileges, privileged helpers, or background daemons.</li>
+        <li>System-managed metadata, recent active files, virtual machines, and app data require review or are blocked.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>System Data still looks large</h2>
+      <p>
+        macOS may count APFS snapshots, purgeable space, Spotlight indexes, package metadata, caches, and app support data under
+        System Data. Some of those items are not safe cleanup targets. HopDisk separates safe candidates from protected or
+        macOS-managed data so you can choose the right next step.
+      </p>
+    </section>
+
+    <section>
+      <h2>Folder access</h2>
+      <p>
+        HopDisk can scan only locations you select in the macOS file picker or saved locations you explicitly remember.
+        If a scan reports inaccessible items, choose a narrower folder, reauthorize the saved location, or run a broader scan
+        by selecting the relevant volume yourself.
+      </p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>
+        HopDisk runs locally on your Mac and does not upload scan results. Read the full
+        <a href="privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Facta-Leopard. HopDisk.</span>
+    <span class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </span>
+  </footer>
+</body>
+</html>
