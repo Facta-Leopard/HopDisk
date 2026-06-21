@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HopDisk Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for HopDisk, a local macOS storage repair utility.">
+  <meta name="description" content="Privacy Policy for HopDisk in all supported languages.">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -20,48 +20,45 @@
     </nav>
   </header>
 
-  <main class="document">
+  <main class="document localized-doc">
     <p class="eyebrow">Privacy Policy</p>
     <h1>HopDisk Privacy Policy</h1>
     <p class="muted">Last updated: June 21, 2026</p>
+    <p class="lead">
+      The privacy policy is provided below in every language currently supported by HopDisk.
+      All versions describe the same app behavior: local processing, user-selected file access, and cleanup by moving selected items to Trash.
+    </p>
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        HopDisk is a local macOS storage repair utility. It scans only folders or volumes you select, reads file metadata needed
-        to calculate storage usage, and moves explicitly selected cleanup items to Trash. HopDisk does not upload scan results,
-        file contents, file paths, or cleanup history to any server controlled by the app developer.
-      </p>
-    </section>
+    <nav class="language-menu" aria-label="Supported languages">
+      <a href="#privacy-en">English</a>
+      <a href="#privacy-ko">한국어</a>
+      <a href="#privacy-fr">Français</a>
+      <a href="#privacy-es">Español</a>
+      <a href="#privacy-de">Deutsch</a>
+      <a href="#privacy-ja">日本語</a>
+      <a href="#privacy-zh-Hans">简体中文</a>
+      <a href="#privacy-zh-Hant">繁體中文</a>
+    </nav>
 
-    <section>
-      <h2>Data HopDisk reads</h2>
-      <p>When you choose a folder or volume, HopDisk may read metadata inside that selected location, including:</p>
-      <ul>
-        <li>File and folder names and paths</li>
-        <li>File sizes, allocated sizes, and package structure</li>
-        <li>Creation, modification, and access dates when available</li>
-        <li>Type identifiers, bundle identifiers, and owning app metadata when available</li>
-        <li>Whether an item appears to be a cache, log, package, virtual machine, app support file, or system-managed metadata</li>
-      </ul>
+    <section id="privacy-en" class="language-block" lang="en">
+      <p class="language-label">English (en)</p>
+      <h2>Privacy Policy</h2>
+      <h3>Summary</h3>
       <p>
-        HopDisk uses this information to classify storage usage, detect storage mismatches, and build user-confirmed cleanup plans.
+        HopDisk is a local macOS storage repair utility. It scans only folders or volumes you select, reads metadata needed to calculate storage usage,
+        and moves explicitly selected cleanup items to Trash. HopDisk does not upload scan results, file contents, file paths, or cleanup history to any server controlled by the app developer.
       </p>
-    </section>
-
-    <section>
-      <h2>Data stored on your Mac</h2>
+      <h3>Data HopDisk reads</h3>
       <p>
-        HopDisk may store scan history, item metadata, cleanup reports, saved scan locations, and security-scoped bookmarks locally
-        on your Mac so you can review previous scans and rescan locations you chose to remember.
+        When you choose a folder or volume, HopDisk may read file and folder names, paths, file sizes, allocated sizes, package structure, dates,
+        type identifiers, bundle identifiers, owning app metadata, and whether an item appears to be a cache, log, package, virtual machine, app support file, or system-managed metadata.
       </p>
+      <h3>Data stored on your Mac</h3>
       <p>
+        HopDisk may store scan history, item metadata, cleanup reports, saved scan locations, and security-scoped bookmarks locally on your Mac.
         You can revoke saved locations in HopDisk settings. Removing the app or its local data removes locally stored HopDisk records.
       </p>
-    </section>
-
-    <section>
-      <h2>Data collection and sharing</h2>
+      <h3>Collection and sharing</h3>
       <ul>
         <li>HopDisk does not use third-party analytics SDKs.</li>
         <li>HopDisk does not track you across apps or websites.</li>
@@ -69,41 +66,288 @@
         <li>HopDisk does not sell or share user data.</li>
         <li>HopDisk does not upload file contents, file paths, or scan results.</li>
       </ul>
+      <p>If you install HopDisk through the App Store, Apple may process purchase, download, crash, and diagnostic information according to Apple's policies and your device settings.</p>
+      <h3>Permissions and cleanup behavior</h3>
       <p>
-        If you install HopDisk through the App Store, Apple may process purchase, download, crash, and diagnostic information
-        according to Apple’s own policies and your device settings.
+        HopDisk uses macOS user-selected file access. It does not request root privileges, install privileged helpers, or run a background daemon.
+        Cleanup moves selected items to Trash only; HopDisk does not permanently delete files or empty Trash automatically.
+      </p>
+      <h3>Support requests and changes</h3>
+      <p>
+        If you contact support through GitHub Issues, information you post may be public. This policy may be updated as HopDisk changes; the date above shows the latest revision.
       </p>
     </section>
 
-    <section>
-      <h2>Permissions</h2>
+    <section id="privacy-ko" class="language-block" lang="ko">
+      <p class="language-label">한국어 (ko)</p>
+      <h2>개인정보 처리방침</h2>
+      <h3>요약</h3>
       <p>
-        HopDisk uses macOS user-selected file access. It scans only locations you select in the file picker or saved locations you
-        explicitly choose to remember. HopDisk does not request root privileges, does not install privileged helpers, and does not
-        run a background daemon.
+        HopDisk는 Mac에서 로컬로 실행되는 macOS 저장 공간 복구 도구입니다. 사용자가 선택한 폴더 또는 볼륨만 스캔하고,
+        저장 공간 계산에 필요한 메타데이터를 읽으며, 사용자가 명시적으로 선택한 정리 항목을 휴지통으로 이동합니다.
+        HopDisk는 스캔 결과, 파일 내용, 파일 경로, 정리 기록을 앱 개발자가 관리하는 서버로 업로드하지 않습니다.
+      </p>
+      <h3>HopDisk가 읽는 데이터</h3>
+      <p>
+        사용자가 폴더 또는 볼륨을 선택하면 HopDisk는 파일 및 폴더 이름, 경로, 파일 크기, 할당 크기, 패키지 구조, 날짜,
+        유형 식별자, 번들 식별자, 소유 앱 메타데이터, 캐시·로그·패키지·가상 머신·앱 지원 파일·시스템 관리 메타데이터 여부를 읽을 수 있습니다.
+      </p>
+      <h3>Mac에 저장되는 데이터</h3>
+      <p>
+        HopDisk는 스캔 기록, 항목 메타데이터, 정리 보고서, 저장된 스캔 위치, 보안 범위 북마크를 사용자의 Mac에 로컬로 저장할 수 있습니다.
+        저장된 위치는 HopDisk 설정에서 철회할 수 있습니다. 앱 또는 로컬 데이터를 제거하면 HopDisk가 로컬에 저장한 기록도 제거됩니다.
+      </p>
+      <h3>수집 및 공유</h3>
+      <ul>
+        <li>HopDisk는 제3자 분석 SDK를 사용하지 않습니다.</li>
+        <li>HopDisk는 앱이나 웹사이트 간 사용자 추적을 하지 않습니다.</li>
+        <li>HopDisk는 광고를 표시하지 않습니다.</li>
+        <li>HopDisk는 사용자 데이터를 판매하거나 공유하지 않습니다.</li>
+        <li>HopDisk는 파일 내용, 파일 경로, 스캔 결과를 업로드하지 않습니다.</li>
+      </ul>
+      <p>App Store를 통해 HopDisk를 설치한 경우, Apple은 Apple의 정책 및 기기 설정에 따라 구매, 다운로드, 충돌, 진단 정보를 처리할 수 있습니다.</p>
+      <h3>권한 및 정리 동작</h3>
+      <p>
+        HopDisk는 macOS의 사용자 선택 파일 접근 권한을 사용합니다. 루트 권한을 요청하지 않고, 권한 상승 헬퍼를 설치하지 않으며, 백그라운드 데몬을 실행하지 않습니다.
+        정리는 선택한 항목을 휴지통으로 이동하는 방식으로만 수행됩니다. HopDisk는 파일을 영구 삭제하거나 휴지통을 자동으로 비우지 않습니다.
+      </p>
+      <h3>지원 요청 및 변경</h3>
+      <p>
+        GitHub Issues로 지원을 요청하면 게시한 정보가 공개될 수 있습니다. 이 방침은 HopDisk 변경에 따라 업데이트될 수 있으며, 위 날짜는 최신 개정일을 나타냅니다.
       </p>
     </section>
 
-    <section>
-      <h2>Cleanup behavior</h2>
+    <section id="privacy-fr" class="language-block" lang="fr">
+      <p class="language-label">Français (fr)</p>
+      <h2>Politique de confidentialité</h2>
+      <h3>Résumé</h3>
       <p>
-        HopDisk moves selected cleanup items to Trash only. It does not permanently delete files and does not empty Trash automatically.
-        You remain responsible for reviewing selected items and emptying Trash later if appropriate.
+        HopDisk est un utilitaire local de réparation du stockage pour macOS. Il analyse uniquement les dossiers ou volumes que vous choisissez,
+        lit les métadonnées nécessaires au calcul de l'utilisation du stockage et déplace vers la corbeille les éléments de nettoyage explicitement sélectionnés.
+        HopDisk n'envoie pas les résultats d'analyse, le contenu des fichiers, les chemins de fichiers ou l'historique de nettoyage vers un serveur contrôlé par le développeur.
+      </p>
+      <h3>Données lues par HopDisk</h3>
+      <p>
+        Lorsque vous choisissez un dossier ou un volume, HopDisk peut lire les noms et chemins de fichiers et dossiers, tailles, tailles allouées,
+        structure de paquets, dates, identifiants de type, identifiants de bundle, métadonnées de l'app propriétaire et le fait qu'un élément semble être un cache, journal, paquet, machine virtuelle, fichier de support d'app ou métadonnée système.
+      </p>
+      <h3>Données stockées sur votre Mac</h3>
+      <p>
+        HopDisk peut stocker localement l'historique d'analyse, les métadonnées d'éléments, les rapports de nettoyage, les emplacements enregistrés et les signets de sécurité.
+        Vous pouvez révoquer les emplacements enregistrés dans les réglages de HopDisk. La suppression de l'app ou de ses données locales supprime les enregistrements locaux de HopDisk.
+      </p>
+      <h3>Collecte et partage</h3>
+      <ul>
+        <li>HopDisk n'utilise pas de SDK d'analyse tiers.</li>
+        <li>HopDisk ne vous suit pas entre apps ou sites web.</li>
+        <li>HopDisk n'affiche pas de publicité.</li>
+        <li>HopDisk ne vend ni ne partage les données utilisateur.</li>
+        <li>HopDisk n'envoie pas le contenu des fichiers, les chemins de fichiers ou les résultats d'analyse.</li>
+      </ul>
+      <p>Si vous installez HopDisk via l'App Store, Apple peut traiter des informations d'achat, de téléchargement, de plantage et de diagnostic selon ses propres règles et vos réglages.</p>
+      <h3>Autorisations et nettoyage</h3>
+      <p>
+        HopDisk utilise l'accès aux fichiers sélectionnés par l'utilisateur dans macOS. Il ne demande pas de privilèges root, n'installe pas d'assistant privilégié et ne lance pas de démon en arrière-plan.
+        Le nettoyage déplace uniquement les éléments sélectionnés vers la corbeille; HopDisk ne supprime pas définitivement les fichiers et ne vide pas la corbeille automatiquement.
+      </p>
+      <h3>Demandes de support et modifications</h3>
+      <p>
+        Si vous contactez le support via GitHub Issues, les informations publiées peuvent être publiques. Cette politique peut être mise à jour lorsque HopDisk évolue; la date ci-dessus indique la dernière révision.
       </p>
     </section>
 
-    <section>
-      <h2>Support requests</h2>
+    <section id="privacy-es" class="language-block" lang="es">
+      <p class="language-label">Español (es)</p>
+      <h2>Política de privacidad</h2>
+      <h3>Resumen</h3>
       <p>
-        If you contact support through GitHub Issues, information you post there may be public. Avoid sharing private file names,
-        private file paths, screenshots, or logs unless you intentionally want to make them public.
+        HopDisk es una utilidad local de reparación de almacenamiento para macOS. Analiza solo las carpetas o volúmenes que eliges,
+        lee los metadatos necesarios para calcular el uso de almacenamiento y mueve a la papelera los elementos de limpieza seleccionados explícitamente.
+        HopDisk no sube resultados de análisis, contenido de archivos, rutas de archivos ni historial de limpieza a ningún servidor controlado por el desarrollador.
+      </p>
+      <h3>Datos que HopDisk lee</h3>
+      <p>
+        Cuando eliges una carpeta o volumen, HopDisk puede leer nombres y rutas de archivos y carpetas, tamaños, tamaños asignados, estructura de paquetes,
+        fechas, identificadores de tipo, identificadores de paquete, metadatos de la app propietaria y si un elemento parece ser caché, registro, paquete, máquina virtual, archivo de soporte de app o metadato gestionado por el sistema.
+      </p>
+      <h3>Datos almacenados en tu Mac</h3>
+      <p>
+        HopDisk puede guardar localmente historial de análisis, metadatos de elementos, informes de limpieza, ubicaciones guardadas y marcadores con ámbito de seguridad.
+        Puedes revocar ubicaciones guardadas en los ajustes de HopDisk. Al eliminar la app o sus datos locales se eliminan los registros locales de HopDisk.
+      </p>
+      <h3>Recopilación y uso compartido</h3>
+      <ul>
+        <li>HopDisk no usa SDK de análisis de terceros.</li>
+        <li>HopDisk no te rastrea entre apps o sitios web.</li>
+        <li>HopDisk no muestra anuncios.</li>
+        <li>HopDisk no vende ni comparte datos de usuario.</li>
+        <li>HopDisk no sube contenido de archivos, rutas de archivos ni resultados de análisis.</li>
+      </ul>
+      <p>Si instalas HopDisk desde App Store, Apple puede procesar información de compra, descarga, fallos y diagnóstico según sus políticas y los ajustes de tu dispositivo.</p>
+      <h3>Permisos y comportamiento de limpieza</h3>
+      <p>
+        HopDisk usa el acceso a archivos seleccionados por el usuario en macOS. No solicita privilegios root, no instala asistentes privilegiados ni ejecuta demonios en segundo plano.
+        La limpieza solo mueve elementos seleccionados a la papelera; HopDisk no elimina archivos permanentemente ni vacía la papelera automáticamente.
+      </p>
+      <h3>Solicitudes de soporte y cambios</h3>
+      <p>
+        Si contactas con soporte mediante GitHub Issues, la información que publiques puede ser pública. Esta política puede actualizarse cuando HopDisk cambie; la fecha anterior indica la revisión más reciente.
       </p>
     </section>
 
-    <section>
-      <h2>Changes to this policy</h2>
+    <section id="privacy-de" class="language-block" lang="de">
+      <p class="language-label">Deutsch (de)</p>
+      <h2>Datenschutzerklärung</h2>
+      <h3>Zusammenfassung</h3>
       <p>
-        This policy may be updated as HopDisk changes. The date at the top of this page shows when the policy was last revised.
+        HopDisk ist ein lokales macOS-Werkzeug zur Speicherreparatur. Es scannt nur Ordner oder Datenträger, die du auswählst,
+        liest die zur Speicherberechnung nötigen Metadaten und bewegt ausdrücklich ausgewählte Bereinigungselemente in den Papierkorb.
+        HopDisk lädt keine Scanergebnisse, Dateiinhalte, Dateipfade oder Bereinigungsverläufe auf Server hoch, die vom App-Entwickler kontrolliert werden.
+      </p>
+      <h3>Daten, die HopDisk liest</h3>
+      <p>
+        Wenn du einen Ordner oder Datenträger auswählst, kann HopDisk Datei- und Ordnernamen, Pfade, Dateigrößen, belegte Größen, Paketstruktur,
+        Datumsangaben, Typkennungen, Bundle-Kennungen, Metadaten der zugehörigen App und Hinweise darauf lesen, ob ein Element Cache, Log, Paket, virtuelle Maschine, App-Support-Datei oder systemverwaltete Metadaten ist.
+      </p>
+      <h3>Lokal auf deinem Mac gespeicherte Daten</h3>
+      <p>
+        HopDisk kann Scanverlauf, Elementmetadaten, Bereinigungsberichte, gespeicherte Scanorte und sicherheitsbezogene Bookmarks lokal auf deinem Mac speichern.
+        Gespeicherte Orte kannst du in den HopDisk-Einstellungen widerrufen. Das Entfernen der App oder ihrer lokalen Daten entfernt die lokal gespeicherten HopDisk-Datensätze.
+      </p>
+      <h3>Erhebung und Weitergabe</h3>
+      <ul>
+        <li>HopDisk verwendet keine Analyse-SDKs von Drittanbietern.</li>
+        <li>HopDisk verfolgt dich nicht über Apps oder Websites hinweg.</li>
+        <li>HopDisk zeigt keine Werbung an.</li>
+        <li>HopDisk verkauft oder teilt keine Nutzerdaten.</li>
+        <li>HopDisk lädt keine Dateiinhalte, Dateipfade oder Scanergebnisse hoch.</li>
+      </ul>
+      <p>Wenn du HopDisk über den App Store installierst, kann Apple Kauf-, Download-, Absturz- und Diagnoseinformationen gemäß Apples Richtlinien und deinen Geräteeinstellungen verarbeiten.</p>
+      <h3>Berechtigungen und Bereinigung</h3>
+      <p>
+        HopDisk verwendet den macOS-Zugriff auf vom Benutzer ausgewählte Dateien. Es fordert keine Root-Rechte an, installiert keine privilegierten Hilfsprogramme und startet keinen Hintergrund-Daemon.
+        Die Bereinigung bewegt ausgewählte Elemente nur in den Papierkorb; HopDisk löscht Dateien nicht dauerhaft und leert den Papierkorb nicht automatisch.
+      </p>
+      <h3>Supportanfragen und Änderungen</h3>
+      <p>
+        Wenn du Support über GitHub Issues kontaktierst, können deine veröffentlichten Informationen öffentlich sein. Diese Erklärung kann bei Änderungen an HopDisk aktualisiert werden; das Datum oben zeigt die letzte Überarbeitung.
+      </p>
+    </section>
+
+    <section id="privacy-ja" class="language-block" lang="ja">
+      <p class="language-label">日本語 (ja)</p>
+      <h2>プライバシーポリシー</h2>
+      <h3>概要</h3>
+      <p>
+        HopDisk は Mac 上でローカルに動作する macOS ストレージ修復ユーティリティです。ユーザーが選択したフォルダまたはボリュームのみをスキャンし、
+        ストレージ使用量の計算に必要なメタデータを読み取り、明示的に選択されたクリーンアップ項目をゴミ箱へ移動します。
+        HopDisk はスキャン結果、ファイル内容、ファイルパス、クリーンアップ履歴を、アプリ開発者が管理するサーバーへアップロードしません。
+      </p>
+      <h3>HopDisk が読み取るデータ</h3>
+      <p>
+        フォルダまたはボリュームを選択すると、HopDisk はファイルおよびフォルダ名、パス、ファイルサイズ、割り当てサイズ、パッケージ構造、
+        日付、タイプ識別子、バンドル識別子、所有アプリのメタデータ、キャッシュ・ログ・パッケージ・仮想マシン・アプリサポートファイル・システム管理メタデータに該当するかどうかを読み取る場合があります。
+      </p>
+      <h3>Mac に保存されるデータ</h3>
+      <p>
+        HopDisk はスキャン履歴、項目メタデータ、クリーンアップレポート、保存済みスキャン場所、セキュリティスコープ付きブックマークを Mac 上にローカル保存する場合があります。
+        保存済みの場所は HopDisk の設定で取り消せます。アプリまたはローカルデータを削除すると、HopDisk がローカルに保存した記録も削除されます。
+      </p>
+      <h3>収集と共有</h3>
+      <ul>
+        <li>HopDisk は第三者の分析 SDK を使用しません。</li>
+        <li>HopDisk はアプリや Web サイトをまたいでユーザーを追跡しません。</li>
+        <li>HopDisk は広告を表示しません。</li>
+        <li>HopDisk はユーザーデータを販売または共有しません。</li>
+        <li>HopDisk はファイル内容、ファイルパス、スキャン結果をアップロードしません。</li>
+      </ul>
+      <p>App Store から HopDisk をインストールした場合、Apple は Apple のポリシーとデバイス設定に従って購入、ダウンロード、クラッシュ、診断情報を処理することがあります。</p>
+      <h3>権限とクリーンアップ動作</h3>
+      <p>
+        HopDisk は macOS のユーザー選択ファイルアクセスを使用します。root 権限を要求せず、特権ヘルパーをインストールせず、バックグラウンドデーモンを実行しません。
+        クリーンアップは選択項目をゴミ箱へ移動するだけです。HopDisk はファイルを完全削除せず、ゴミ箱を自動的に空にしません。
+      </p>
+      <h3>サポート依頼と変更</h3>
+      <p>
+        GitHub Issues でサポートに連絡すると、投稿した情報が公開される場合があります。このポリシーは HopDisk の変更に応じて更新されることがあり、上記の日付は最新の改訂日を示します。
+      </p>
+    </section>
+
+    <section id="privacy-zh-Hans" class="language-block" lang="zh-Hans">
+      <p class="language-label">简体中文 (zh-Hans)</p>
+      <h2>隐私政策</h2>
+      <h3>摘要</h3>
+      <p>
+        HopDisk 是一款在 Mac 本机运行的 macOS 存储修复工具。它只扫描你选择的文件夹或卷宗，
+        读取计算存储用量所需的元数据，并将你明确选择的清理项目移到废纸篓。
+        HopDisk 不会将扫描结果、文件内容、文件路径或清理历史上传到由 App 开发者控制的任何服务器。
+      </p>
+      <h3>HopDisk 读取的数据</h3>
+      <p>
+        当你选择文件夹或卷宗时，HopDisk 可能会读取文件和文件夹名称、路径、文件大小、分配大小、包结构、
+        日期、类型标识符、Bundle 标识符、所属 App 元数据，以及项目是否看起来像缓存、日志、包、虚拟机、App 支持文件或系统管理的元数据。
+      </p>
+      <h3>存储在你的 Mac 上的数据</h3>
+      <p>
+        HopDisk 可能会在你的 Mac 本机保存扫描历史、项目元数据、清理报告、已保存的扫描位置和安全范围书签。
+        你可以在 HopDisk 设置中撤销已保存的位置。删除 App 或其本地数据会删除 HopDisk 在本机保存的记录。
+      </p>
+      <h3>收集和共享</h3>
+      <ul>
+        <li>HopDisk 不使用第三方分析 SDK。</li>
+        <li>HopDisk 不会跨 App 或网站跟踪你。</li>
+        <li>HopDisk 不展示广告。</li>
+        <li>HopDisk 不出售或共享用户数据。</li>
+        <li>HopDisk 不上传文件内容、文件路径或扫描结果。</li>
+      </ul>
+      <p>如果你通过 App Store 安装 HopDisk，Apple 可能会根据其政策和你的设备设置处理购买、下载、崩溃和诊断信息。</p>
+      <h3>权限和清理行为</h3>
+      <p>
+        HopDisk 使用 macOS 的用户选择文件访问权限。它不请求 root 权限，不安装特权辅助工具，也不运行后台守护进程。
+        清理只会将选中的项目移到废纸篓；HopDisk 不会永久删除文件，也不会自动清空废纸篓。
+      </p>
+      <h3>支持请求和变更</h3>
+      <p>
+        如果你通过 GitHub Issues 联系支持，你发布的信息可能会公开。本政策可能会随着 HopDisk 的变化而更新；上方日期表示最新修订日期。
+      </p>
+    </section>
+
+    <section id="privacy-zh-Hant" class="language-block" lang="zh-Hant">
+      <p class="language-label">繁體中文 (zh-Hant)</p>
+      <h2>隱私權政策</h2>
+      <h3>摘要</h3>
+      <p>
+        HopDisk 是一款在 Mac 本機執行的 macOS 儲存空間修復工具。它只會掃描你選取的資料夾或卷宗，
+        讀取計算儲存空間用量所需的中繼資料，並將你明確選取的清理項目移到垃圾桶。
+        HopDisk 不會將掃描結果、檔案內容、檔案路徑或清理歷史上傳到由 App 開發者控制的任何伺服器。
+      </p>
+      <h3>HopDisk 讀取的資料</h3>
+      <p>
+        當你選取資料夾或卷宗時，HopDisk 可能會讀取檔案和資料夾名稱、路徑、檔案大小、分配大小、套件結構、
+        日期、類型識別碼、Bundle 識別碼、所屬 App 中繼資料，以及項目是否看起來像快取、記錄、套件、虛擬機、App 支援檔案或系統管理的中繼資料。
+      </p>
+      <h3>儲存在你的 Mac 上的資料</h3>
+      <p>
+        HopDisk 可能會在你的 Mac 本機儲存掃描歷史、項目中繼資料、清理報告、已儲存的掃描位置和安全範圍書籤。
+        你可以在 HopDisk 設定中撤銷已儲存的位置。刪除 App 或其本機資料會刪除 HopDisk 在本機儲存的記錄。
+      </p>
+      <h3>收集與分享</h3>
+      <ul>
+        <li>HopDisk 不使用第三方分析 SDK。</li>
+        <li>HopDisk 不會跨 App 或網站追蹤你。</li>
+        <li>HopDisk 不顯示廣告。</li>
+        <li>HopDisk 不出售或分享使用者資料。</li>
+        <li>HopDisk 不上傳檔案內容、檔案路徑或掃描結果。</li>
+      </ul>
+      <p>如果你透過 App Store 安裝 HopDisk，Apple 可能會依照其政策和你的裝置設定處理購買、下載、當機和診斷資訊。</p>
+      <h3>權限與清理行為</h3>
+      <p>
+        HopDisk 使用 macOS 的使用者選取檔案存取權限。它不要求 root 權限，不安裝特權輔助工具，也不執行背景常駐程式。
+        清理只會將選取的項目移到垃圾桶；HopDisk 不會永久刪除檔案，也不會自動清空垃圾桶。
+      </p>
+      <h3>支援請求與變更</h3>
+      <p>
+        如果你透過 GitHub Issues 聯絡支援，你發布的資訊可能會公開。本政策可能會隨 HopDisk 的變更而更新；上方日期表示最新修訂日期。
       </p>
     </section>
   </main>
